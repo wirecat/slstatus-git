@@ -61,9 +61,9 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command,  "♬:%3s",       "ponymix get-volume" },
-	{ ram_perc,     " | m:%3s",    NULL  },
-	{ cpu_perc,     " | c:%3s",      NULL  },
-	{ disk_free,    " | d:%2.2s Gb", "/" },
-	{ datetime,     " | %s",        "%F %r" }
+	{ run_command,  "%s",            "ponymix get-volume" },
+	{ ram_perc,     "   %2s",        NULL  },
+	{ cpu_perc,     "   %2s",        NULL  },
+	{ disk_free,    "   %s",         "/" },
+	{ datetime,     "   %s",         "%F %r" }
 };
